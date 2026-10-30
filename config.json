@@ -1,0 +1,50 @@
+{
+  "profile": {
+    "name": "Srijan",
+    "summary": "HEC Paris MiM + BITS Pilani engineering, ~2.5 years work experience",
+    "years_experience": 2.5,
+    "pitch": "I'm an HEC Paris MiM graduate with a BITS Pilani engineering background and 2.5 years of work experience"
+  },
+  "settings": {
+    "max_age_days": 14,
+    "daily_target": 100,
+    "results_per_query_per_site": 40,
+    "sites_india": ["linkedin", "indeed", "glassdoor", "google", "naukri"],
+    "sites_europe": ["linkedin", "indeed", "google"],
+    "fetch_linkedin_descriptions": true,
+    "pause_between_queries_sec": 4
+  },
+  "searches": [
+    {"track": "VC / Investing", "region": "india", "terms": ["venture capital associate", "investment associate venture", "VC analyst associate", "corporate venture capital", "family office investment associate", "investment team associate startup fund"]},
+    {"track": "Founder's Office", "region": "india", "terms": ["founder's office", "founders office associate", "chief of staff startup", "CEO office associate", "strategy and growth associate startup"]},
+    {"track": "Product", "region": "india", "terms": ["product manager", "associate product manager", "product manager fintech", "product manager B2B SaaS"]},
+    {"track": "Corporate Strategy", "region": "india", "terms": ["corporate strategy manager", "corporate strategy associate", "strategy manager", "business strategy M&A associate", "corporate development associate"]},
+    {"track": "Consulting", "region": "india", "terms": ["management consultant", "strategy consultant", "associate consultant strategy", "consultant MBA"]},
+    {"track": "Europe Grad Scheme", "region": "europe", "terms": ["graduate programme consulting", "graduate programme strategy", "management trainee strategy", "graduate scheme corporate strategy", "leadership development programme graduate"]}
+  ],
+  "locations": {
+    "india": ["India"],
+    "europe": [
+      {"location": "London, United Kingdom", "country_indeed": "uk"},
+      {"location": "Paris, France", "country_indeed": "france"},
+      {"location": "Germany", "country_indeed": "germany"},
+      {"location": "Netherlands", "country_indeed": "netherlands"},
+      {"location": "Switzerland", "country_indeed": "switzerland"}
+    ]
+  },
+  "scoring": {
+    "boost_keywords": {
+      "venture": 12, "investment": 8, "investing": 8, "family office": 12, "corporate venture": 14, "cvc": 10,
+      "founder": 12, "chief of staff": 10, "ceo office": 10,
+      "strategy": 10, "corporate development": 10, "m&a": 6,
+      "product manager": 10, "consult": 8, "graduate programme": 12, "graduate program": 12, "graduate scheme": 12,
+      "mba": 5, "mim": 8, "master in management": 8, "tier 1": 4, "iit": 2, "bits": 3, "hec": 6, "insead": 3
+    },
+    "penalty_keywords": {
+      "intern": -40, "internship": -40, "director": -25, "vice president": -30, "vp ": -25, "head of": -15,
+      "principal": -10, "partner": -20, "senior manager": -10, "sales executive": -30, "telecaller": -50,
+      "bpo": -50, "accountant": -30, "recruiter": -30, "teacher": -40, "data entry": -50, "relationship manager": -20
+    },
+    "top_firms": ["mckinsey", "bcg", "boston consulting", "bain", "kearney", "oliver wyman", "roland berger", "strategy&", "accenture strategy", "deloitte", "ey-parthenon", "pwc", "peak xv", "sequoia", "accel", "lightspeed", "elevation", "matrix", "z47", "nexus", "blume", "chiratae", "kalaari", "stellaris", "3one4", "a91", "fireside", "india quotient", "prime venture", "bessemer", "general atlantic", "tiger global", "temasek", "gic", "softbank", "reliance", "tata", "aditya birla", "mahindra", "flipkart", "zomato", "eternal", "swiggy", "razorpay", "cred", "zepto", "phonepe", "meesho", "groww", "zerodha", "unilever", "nestle", "loreal", "l'oreal", "lvmh", "google", "amazon", "microsoft"]
+  }
+}
